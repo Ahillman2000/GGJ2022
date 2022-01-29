@@ -6,12 +6,14 @@ using UnityEngine;
 public class Turret : MonoBehaviour
 {
     [SerializeField] private GameObject projectile;
-    [SerializeField] private GameObject projectileContainer;
     [SerializeField] private Transform firePoint;
     [SerializeField] private float fireRateInSecs;
+    [SerializeField] private ColourChange.Colour[] fireSequence;
     [SerializeField] private float bulletForce = 20.0f;
+    [SerializeField] private bool shouldRotate = false;
+    private int _currentColour;
     private float _timePassed;
-    
+
     private void Start()
     {
         _timePassed = fireRateInSecs;
@@ -28,8 +30,20 @@ public class Turret : MonoBehaviour
 
     private void Fire()
     {
+        firePoint.parent.GetComponent<ColourChange>().colour = fireSequence[_currentColour];
+        GetComponent<ColourChange>().colour = fireSequence[_currentColour];
+        StartCoroutine(DelayBulletFire());
+    }
+
+    private IEnumerator DelayBulletFire()
+    {
+        yield return new WaitForSeconds(1.0f);
         GameObject bullet = Instantiate(projectile, firePoint.position, firePoint.rotation);
-        bullet.transform.parent = projectileContainer.transform;
+        bullet.transform.parent = firePoint.transform;
+        
+        bullet.GetComponent<ColourChange>().colour = fireSequence[_currentColour++];
+        if (_currentColour >= fireSequence.Length) {  _currentColour = 0; }
+
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
 
