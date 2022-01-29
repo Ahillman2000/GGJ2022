@@ -770,7 +770,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4162,6 +4162,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &800360801 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8736909950370794610, guid: 70441a1ed1301b948b59bda867143d86,
+    type: 3}
+  m_PrefabInstance: {fileID: 8736909949763252916}
+  m_PrefabAsset: {fileID: 0}
+--- !u!111 &800360802
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800360801}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: -447384509801025480, guid: ac94b0cdc321356489f0f0710d00ae45,
+    type: 3}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1001 &849706542
 PrefabInstance:
   m_ObjectHideFlags: 0
