@@ -13,20 +13,15 @@ public class ColourChange : MonoBehaviour
     };
     public Colour colour;
 
-    [SerializeField] Sprite black;
-    [SerializeField] Sprite white;
-
     void Start()
     {
         if (colour == Colour.BLACK)
         {
-            spriteRenderer.sprite = black;
-            //this.gameObject.layer = 6;
+            spriteRenderer.color = Color.black;
         }
         else if (colour == Colour.WHITE)
         {
-            spriteRenderer.sprite = white;
-            //this.gameObject.layer = 7;
+            spriteRenderer.color = Color.white;
         }
     }
 
@@ -53,18 +48,16 @@ public class ColourChange : MonoBehaviour
 
         if (colour == Colour.BLACK)
         {
-            spriteRenderer.sprite = black;
-            //this.gameObject.layer = 6;
+            spriteRenderer.color = Color.black;
         }
         else if (colour == Colour.WHITE)
         {
-            spriteRenderer.sprite = white;
-            //this.gameObject.layer = 7;
+            spriteRenderer.color = Color.white;
         }
     }
 
-    /*public Colour GetColour()
+    public Color GetColour()
     {
-        return colour;
-    }*/
+        return spriteRenderer.color;
+    }
 }
