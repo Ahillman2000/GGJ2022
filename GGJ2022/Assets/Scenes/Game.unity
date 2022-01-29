@@ -502,13 +502,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 570af8d86843afa4ba78af23109c8297, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  playerColour:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  platforms: []
 --- !u!4 &141085609
 Transform:
   m_ObjectHideFlags: 0
@@ -576,7 +569,7 @@ MonoBehaviour:
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 192
   m_GroundCheck: {fileID: 308469260}
   m_CeilingCheck: {fileID: 624434349}
   m_CrouchDisableCollider: {fileID: 0}
