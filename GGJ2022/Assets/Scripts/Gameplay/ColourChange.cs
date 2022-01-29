@@ -18,10 +18,12 @@ public class ColourChange : MonoBehaviour
         if (colour == Colour.BLACK)
         {
             spriteRenderer.color = Color.black;
+            this.gameObject.layer = LayerMask.NameToLayer("Black");
         }
         else if (colour == Colour.WHITE)
         {
             spriteRenderer.color = Color.white;
+            this.gameObject.layer = LayerMask.NameToLayer("White");
         }
     }
 
@@ -41,18 +43,15 @@ public class ColourChange : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Q))
-        {
-            ChangeColour();
-        }
-
         if (colour == Colour.BLACK)
         {
             spriteRenderer.color = Color.black;
+            this.gameObject.layer = LayerMask.NameToLayer("Black");
         }
         else if (colour == Colour.WHITE)
         {
             spriteRenderer.color = Color.white;
+            this.gameObject.layer = LayerMask.NameToLayer("White");
         }
     }
 

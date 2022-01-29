@@ -20,6 +20,11 @@ public class PlayerMovement : MonoBehaviour
         {
             jump = true;
         }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            this.GetComponent<ColourChange>().ChangeColour();
+        }
     }
 
     private void FixedUpdate()
