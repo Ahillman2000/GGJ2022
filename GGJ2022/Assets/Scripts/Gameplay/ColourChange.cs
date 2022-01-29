@@ -55,8 +55,8 @@ public class ColourChange : MonoBehaviour
         }
     }
 
-    public Color GetColour()
+    public Colour GetColour()
     {
-        return spriteRenderer.color;
+        return colour;
     }
 }
