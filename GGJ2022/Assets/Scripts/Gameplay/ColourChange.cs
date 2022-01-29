@@ -21,10 +21,12 @@ public class ColourChange : MonoBehaviour
         if (colour == Colour.BLACK)
         {
             spriteRenderer.sprite = black;
+            //this.gameObject.layer = 6;
         }
         else if (colour == Colour.WHITE)
         {
             spriteRenderer.sprite = white;
+            //this.gameObject.layer = 7;
         }
     }
 
@@ -52,10 +54,17 @@ public class ColourChange : MonoBehaviour
         if (colour == Colour.BLACK)
         {
             spriteRenderer.sprite = black;
+            //this.gameObject.layer = 6;
         }
         else if (colour == Colour.WHITE)
         {
             spriteRenderer.sprite = white;
+            //this.gameObject.layer = 7;
         }
     }
+
+    /*public Colour GetColour()
+    {
+        return colour;
+    }*/
 }
