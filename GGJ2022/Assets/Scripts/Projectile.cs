@@ -8,7 +8,8 @@ public class Projectile : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D col)
     {
         GameObject surface = col.gameObject;
-        if (surface.layer == LayerMask.NameToLayer("Black"))
+        surface.GetComponent<ColourChange>().ChangeColour();
+        /*if (surface.layer == LayerMask.NameToLayer("Black"))
         {
             surface.GetComponent<SpriteRenderer>().color = Color.white;
             surface.layer = LayerMask.NameToLayer("White");
@@ -17,7 +18,7 @@ public class Projectile : MonoBehaviour
         {
             surface.GetComponent<SpriteRenderer>().color = Color.black;
             surface.layer = LayerMask.NameToLayer("Black");
-        }
+        }*/
         Destroy(gameObject);
     }
 }
