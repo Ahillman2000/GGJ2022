@@ -108,7 +108,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 160
-        width: 75
+        width: 72
         height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -127,10 +127,10 @@ TextureImporter:
       name: Spoidy_outline_1
       rect:
         serializedVersion: 2
-        x: 75
+        x: 73
         y: 160
-        width: 75
-        height: 160
+        width: 77
+        height: 155
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,9 +148,9 @@ TextureImporter:
       name: Spoidy_outline_2
       rect:
         serializedVersion: 2
-        x: 150
+        x: 151
         y: 160
-        width: 75
+        width: 74
         height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -172,7 +172,7 @@ TextureImporter:
         x: 0
         y: 0
         width: 75
-        height: 160
+        height: 155
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

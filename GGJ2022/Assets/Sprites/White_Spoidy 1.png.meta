@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: 7cb25882806352c4596e9dfbd2914793
+guid: ad274830b6509e04896f8754aa0b5550
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8272170875108352347
-    second: White_Spoidy_0
+      213: -6367813736905167859
+    second: White_Spoidy 1_0
   - first:
-      213: 6261336288318945711
-    second: White_Spoidy_1
+      213: -5317931601468469588
+    second: White_Spoidy 1_1
   - first:
-      213: -8601068629159883175
-    second: White_Spoidy_2
+      213: 7548548853743578678
+    second: White_Spoidy 1_2
   - first:
-      213: 9149214289255636671
-    second: White_Spoidy_3
-  - first:
-      213: 4396969406339088063
-    second: White_Spoidy_4
-  - first:
-      213: 2998299890972887205
-    second: White_Spoidy_5
+      213: -3969415683620345864
+    second: White_Spoidy 1_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: White_Spoidy_0
+      name: White_Spoidy 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 160
-        width: 75
-        height: 160
+        x: 2
+        y: 162
+        width: 69
+        height: 156
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,20 +117,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ae95dbba68533d80800000000000000
-      internalID: -8272170875108352347
+      spriteID: d0c2ae7f42bf0a7a0800000000000000
+      internalID: -6367813736905167859
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: White_Spoidy_1
+      name: White_Spoidy 1_1
       rect:
         serializedVersion: 2
         x: 75
-        y: 160
-        width: 75
-        height: 160
+        y: 162
+        width: 73
+        height: 153
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,20 +138,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa973842e2cb4e650800000000000000
-      internalID: 6261336288318945711
+      spriteID: caec5a25269e236b0800000000000000
+      internalID: -5317931601468469588
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: White_Spoidy_2
+      name: White_Spoidy 1_2
       rect:
         serializedVersion: 2
-        x: 150
+        x: 149
         y: 160
-        width: 75
-        height: 160
+        width: 69
+        height: 156
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95e4b26f6add2a880800000000000000
-      internalID: -8601068629159883175
+      spriteID: 63e61154035d1c860800000000000000
+      internalID: 7548548853743578678
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: White_Spoidy_3
+      name: White_Spoidy 1_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 0
-        width: 75
-        height: 160
+        width: 73
+        height: 153
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,8 +180,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbe9205ebe988fe70800000000000000
-      internalID: 9149214289255636671
+      spriteID: 8f7e1f3777dc9e8c0800000000000000
+      internalID: -3969415683620345864
       vertices: []
       indices: 
       edges: []
