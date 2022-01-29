@@ -5,37 +5,30 @@ using UnityEngine;
 public class PlatformColliders : MonoBehaviour
 {
     GameObject player;
-    ColourChange playerColour;
+    Color playerColour;
 
-    GameObject[] blackObjects;
-    GameObject[] whiteObjects;
-
-    public enum Colours
-    {
-        BLACK,
-        WHITE,
-        GREY,
-    };
-    //public Colours colours;
+    GameObject[] platforms;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        playerColour = player.GetComponent<ColourChange>();
-
-        blackObjects = GameObject.FindGameObjectsWithTag("Black");
-        whiteObjects = GameObject.FindGameObjectsWithTag("White");
+        platforms = GameObject.FindGameObjectsWithTag("Platform");
     }
 
     void Update()
     {
-        for (int i = 0; i < blackObjects.Length; i++)
+        playerColour = player.GetComponent<SpriteRenderer>().color;
+
+        for (int i = 0; i < platforms.Length; i++)
         {
-            blackObjects[i].GetComponent<BoxCollider2D>().enabled = false;
-        }
-        for (int i = 0; i < whiteObjects.Length; i++)
-        {
-            whiteObjects[i].GetComponent<BoxCollider2D>().enabled = false;
+            if(platforms[i].GetComponentInChildren<SpriteRenderer>().color == playerColour)
+            {
+                platforms[i].GetComponent<BoxCollider2D>().enabled = false;
+            }
+            else
+            {
+                platforms[i].GetComponent<BoxCollider2D>().enabled = true;
+            }
         }
     }
 }
