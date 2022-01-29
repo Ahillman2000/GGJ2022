@@ -29,6 +29,7 @@ public class Turret : MonoBehaviour
     private void Fire()
     {
         GameObject bullet = Instantiate(projectile, firePoint.position, firePoint.rotation);
+        bullet.transform.parent = projectileContainer.transform;
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
     }

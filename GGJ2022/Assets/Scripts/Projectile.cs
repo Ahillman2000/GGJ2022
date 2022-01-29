@@ -5,22 +5,20 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    private void OnEnable()
-    {
-        StartCoroutine(DestroyBullet());
-    }
-
     private void OnCollisionEnter2D(Collision2D col)
     {
-        int layer = col.collider.gameObject.layer;
-        if (layer == LayerMask.NameToLayer("Black")) {}
-        else if (layer == LayerMask.NameToLayer("White")) {}
-    }
-
-    private IEnumerator DestroyBullet()
-    {
-        yield return new WaitForSeconds(5.0f);
-        Destroy(this);
+        GameObject surface = col.gameObject;
+        if (surface.layer == LayerMask.NameToLayer("Black"))
+        {
+            surface.GetComponent<SpriteRenderer>().color = Color.white;
+            surface.layer = LayerMask.NameToLayer("White");
+        }
+        else if (surface.layer == LayerMask.NameToLayer("White"))
+        {
+            surface.GetComponent<SpriteRenderer>().color = Color.black;
+            surface.layer = LayerMask.NameToLayer("Black");
+        }
+        Destroy(gameObject);
     }
 }
 
