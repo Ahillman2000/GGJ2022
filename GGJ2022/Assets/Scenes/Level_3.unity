@@ -847,7 +847,7 @@ PrefabInstance:
         type: 3}
       propertyPath: projectileContainer
       value: 
-      objectReference: {fileID: 1414839651}
+      objectReference: {fileID: 0}
     - target: {fileID: 3957260157428700900, guid: 92051eacf0ad7bb41b90115f943d5384,
         type: 3}
       propertyPath: m_SortingOrder
@@ -918,17 +918,21 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7330272455138085748, guid: 92051eacf0ad7bb41b90115f943d5384,
+        type: 3}
+      propertyPath: fireSequence.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330272455138085748, guid: 92051eacf0ad7bb41b90115f943d5384,
+        type: 3}
+      propertyPath: fireSequence.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92051eacf0ad7bb41b90115f943d5384, type: 3}
 --- !u!4 &1414839650 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 3957260158147588636, guid: 92051eacf0ad7bb41b90115f943d5384,
-    type: 3}
-  m_PrefabInstance: {fileID: 1414839649}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1414839651 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6509132504962410533, guid: 92051eacf0ad7bb41b90115f943d5384,
+  m_CorrespondingSourceObject: {fileID: 6175487503335349498, guid: 92051eacf0ad7bb41b90115f943d5384,
     type: 3}
   m_PrefabInstance: {fileID: 1414839649}
   m_PrefabAsset: {fileID: 0}

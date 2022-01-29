@@ -214,7 +214,7 @@ PrefabInstance:
         type: 3}
       propertyPath: projectileContainer
       value: 
-      objectReference: {fileID: 383298427}
+      objectReference: {fileID: 0}
     - target: {fileID: 3957260157428700900, guid: 92051eacf0ad7bb41b90115f943d5384,
         type: 3}
       propertyPath: m_SortingOrder
@@ -285,17 +285,21 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7330272455138085748, guid: 92051eacf0ad7bb41b90115f943d5384,
+        type: 3}
+      propertyPath: fireSequence.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330272455138085748, guid: 92051eacf0ad7bb41b90115f943d5384,
+        type: 3}
+      propertyPath: fireSequence.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92051eacf0ad7bb41b90115f943d5384, type: 3}
 --- !u!4 &383298426 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 3957260158147588636, guid: 92051eacf0ad7bb41b90115f943d5384,
-    type: 3}
-  m_PrefabInstance: {fileID: 383298425}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &383298427 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6509132504962410533, guid: 92051eacf0ad7bb41b90115f943d5384,
+  m_CorrespondingSourceObject: {fileID: 6175487503335349498, guid: 92051eacf0ad7bb41b90115f943d5384,
     type: 3}
   m_PrefabInstance: {fileID: 383298425}
   m_PrefabAsset: {fileID: 0}
@@ -340,10 +344,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1799439163}
+  - {fileID: 383298426}
   - {fileID: 1038336560}
   - {fileID: 349632136}
   - {fileID: 1490317683}
-  - {fileID: 383298426}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
