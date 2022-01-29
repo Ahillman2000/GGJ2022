@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 
 public class Menu : MonoBehaviour
@@ -76,5 +77,12 @@ public class Menu : MonoBehaviour
     {
         slButton.GetComponent<Image>().color = Color.black;
         slText.color = Color.white;
+    }
+
+    public void GotoLevel()
+    {
+        int level = EventSystem.current.currentSelectedGameObject.GetComponent<Level>().ButtonLevel();
+        Time.timeScale = 1;
+        SceneManager.LoadScene(level);
     }
 }
