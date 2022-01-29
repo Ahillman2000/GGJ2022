@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private CharacterController2D controller;
+    [SerializeField] Animator[] player_sprites;
 
     float horizontal_move = 0f;
 
@@ -24,6 +25,17 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q))
         {
             this.GetComponent<ColourChange>().ChangeColour();
+        }
+
+        if(horizontal_move != 0)
+        {
+            player_sprites[0].SetBool("moving",true);
+            player_sprites[1].SetBool("moving",true);
+        }
+        else
+        {
+            player_sprites[0].SetBool("moving", false);
+            player_sprites[1].SetBool("moving", false);
         }
     }
 
