@@ -1,45 +1,56 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Turret : MonoBehaviour
 {
     [SerializeField] private GameObject projectile;
     [SerializeField] private Transform firePoint;
-    [SerializeField] private float fireRateInSecs;
-    [SerializeField] private ColourChange.Colour[] fireSequence;
+    [SerializeField] private float fireDelay;
     [SerializeField] private float bulletForce = 20.0f;
-    [SerializeField] private bool shouldRotate = false;
-    private int _currentColour;
+    [SerializeField] private ColourChange.Colour[] fireSequence;
+    [Space]
+    [SerializeField] private bool shouldRotate;
+    
+    private int   _currentColour;
+    private float _targetRotation;
     private float _timePassed;
 
     private void Start()
     {
-        _timePassed = fireRateInSecs;
+        _timePassed = fireDelay;
+        _targetRotation = transform.rotation.eulerAngles.z;
     }
 
     private void Update()
     {
-        if (Time.time > _timePassed)
+        transform.rotation = Quaternion.Euler(0,0,_targetRotation);
+        
+        if (Time.time >= _timePassed)
         {
-            Fire();
-            _timePassed += fireRateInSecs;
+            if (shouldRotate)
+            {
+                _targetRotation += 90;
+            }
+            
+            StartCoroutine(ChangeTurretColour());
+            _timePassed += fireDelay*1.25f;
         }
     }
 
-    private void Fire()
+    private IEnumerator ChangeTurretColour()
     {
         firePoint.parent.GetComponent<ColourChange>().colour = fireSequence[_currentColour];
         GetComponent<ColourChange>().colour = fireSequence[_currentColour];
-        StartCoroutine(DelayBulletFire());
+        
+        yield return new WaitForSeconds(fireDelay);
+        
+        FireProjectile();
     }
 
-    private IEnumerator DelayBulletFire()
+    private void FireProjectile()
     {
-        yield return new WaitForSeconds(1.0f);
         GameObject bullet = Instantiate(projectile, firePoint.position, firePoint.rotation);
-        bullet.transform.parent = firePoint.transform;
+        //bullet.transform.parent = firePoint.transform;
         
         bullet.GetComponent<ColourChange>().colour = fireSequence[_currentColour++];
         if (_currentColour >= fireSequence.Length) {  _currentColour = 0; }
@@ -51,4 +62,3 @@ public class Turret : MonoBehaviour
         EventManager.TriggerEvent("TurretProjectileFired", audioParam);
     }
 }
-

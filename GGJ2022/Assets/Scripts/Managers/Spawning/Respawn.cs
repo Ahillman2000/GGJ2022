@@ -12,8 +12,11 @@ public class Respawn : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        player.transform.position = respawnPoint.position;
+        if (col.CompareTag("Player"))
+        {
+            player.transform.position = respawnPoint.position;
+        }
     }
 }

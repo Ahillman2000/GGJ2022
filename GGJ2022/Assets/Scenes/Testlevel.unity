@@ -691,6 +691,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7330272455138085748, guid: 92051eacf0ad7bb41b90115f943d5384,
         type: 3}
+      propertyPath: fireDelay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330272455138085748, guid: 92051eacf0ad7bb41b90115f943d5384,
+        type: 3}
       propertyPath: fireSequence.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -4232,6 +4237,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7330272455138085748, guid: 92051eacf0ad7bb41b90115f943d5384,
         type: 3}
+      propertyPath: fireDelay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330272455138085748, guid: 92051eacf0ad7bb41b90115f943d5384,
+        type: 3}
       propertyPath: fireSequence.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -4528,6 +4538,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7330272455138085748, guid: 92051eacf0ad7bb41b90115f943d5384,
         type: 3}
+      propertyPath: fireDelay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330272455138085748, guid: 92051eacf0ad7bb41b90115f943d5384,
+        type: 3}
       propertyPath: fireSequence.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -4685,6 +4700,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7330272455138085748, guid: 92051eacf0ad7bb41b90115f943d5384,
         type: 3}
+      propertyPath: fireDelay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330272455138085748, guid: 92051eacf0ad7bb41b90115f943d5384,
+        type: 3}
       propertyPath: fireSequence.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -4766,6 +4786,11 @@ PrefabInstance:
         type: 3}
       propertyPath: colour
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330272455138085748, guid: 92051eacf0ad7bb41b90115f943d5384,
+        type: 3}
+      propertyPath: fireDelay
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7330272455138085748, guid: 92051eacf0ad7bb41b90115f943d5384,
         type: 3}
@@ -5245,6 +5270,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7330272455138085748, guid: 92051eacf0ad7bb41b90115f943d5384,
         type: 3}
+      propertyPath: fireDelay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330272455138085748, guid: 92051eacf0ad7bb41b90115f943d5384,
+        type: 3}
       propertyPath: fireSequence.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -5337,6 +5367,11 @@ PrefabInstance:
         type: 3}
       propertyPath: colour
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330272455138085748, guid: 92051eacf0ad7bb41b90115f943d5384,
+        type: 3}
+      propertyPath: fireDelay
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7330272455138085748, guid: 92051eacf0ad7bb41b90115f943d5384,
         type: 3}
