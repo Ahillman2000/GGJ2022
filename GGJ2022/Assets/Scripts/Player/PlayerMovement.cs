@@ -5,12 +5,28 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private CharacterController2D controller;
+    ColourChange colourChange;
     [SerializeField] Animator[] player_sprites;
 
     float horizontal_move = 0f;
 
-    float run_speed = 40f;
+    [SerializeField] float run_speed;
     bool jump = false;
+
+    private void Start()
+    {
+        colourChange = this.GetComponent<ColourChange>();
+
+        if(colourChange.colour == ColourChange.Colour.BLACK)
+        {
+            controller.m_WhatIsGround = controller.whiteLayer;
+        }
+        else
+        {
+            controller.m_WhatIsGround = controller.blackLayer;
+        }
+
+    }
 
 
     void Update()
@@ -24,10 +40,18 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            this.GetComponent<ColourChange>().ChangeColour();
+            colourChange.ChangeColour();
+            if(controller.m_WhatIsGround == controller.whiteLayer)
+            {
+                controller.m_WhatIsGround = controller.blackLayer;
+            }
+            else
+            {
+                controller.m_WhatIsGround = controller.whiteLayer;
+            }
         }
 
-        if(horizontal_move != 0)
+        if(horizontal_move != 0 && controller.IsGrounded())
         {
             player_sprites[0].SetBool("moving",true);
             player_sprites[1].SetBool("moving",true);
