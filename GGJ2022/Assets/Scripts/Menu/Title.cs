@@ -14,7 +14,9 @@ public class Title : MonoBehaviour
         startButton.SetActive(false);
         quitButton.SetActive(false);
         animator = gameObject.GetComponent<Animator>();
-        
+        EventParam audioParam = new EventParam();
+        audioParam.string_ = "MenuTheme";
+        AudioManager.Instance.Play(audioParam);
     }
 
     // Update is called once per frame

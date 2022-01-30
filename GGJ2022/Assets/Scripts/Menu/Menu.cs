@@ -15,6 +15,9 @@ public class Menu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        EventParam audioParam = new EventParam();
+        audioParam.string_ = "GameTheme";
+        AudioManager.Instance.Play(audioParam);
         pausedPanel.SetActive(false);
         levelSelect.SetActive(false);
         btmmText = btmmButton.GetComponentInChildren<Text>();
