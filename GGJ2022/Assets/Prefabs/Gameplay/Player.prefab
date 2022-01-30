@@ -183,6 +183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 8736909950370794620}
+  controller: {fileID: 8736909949846425033}
   colour: 1
 --- !u!1 &8736909950000049343
 GameObject:
@@ -397,6 +398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 8736909950241606036}
+  controller: {fileID: 0}
   colour: 0
 --- !u!114 &8736909950241606038
 MonoBehaviour:

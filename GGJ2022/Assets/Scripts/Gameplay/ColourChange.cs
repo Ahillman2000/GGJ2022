@@ -5,6 +5,7 @@ using UnityEngine;
 public class ColourChange : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private CharacterController2D controller;
 
     public enum Colour
     {
@@ -38,6 +39,18 @@ public class ColourChange : MonoBehaviour
         else if (colour == Colour.WHITE)
         {
             colour = Colour.BLACK;
+        }
+
+        if(this.CompareTag("Player"))
+        {
+            if (controller.m_WhatIsGround == controller.whiteLayer)
+            {
+                controller.m_WhatIsGround = controller.blackLayer;
+            }
+            else
+            {
+                controller.m_WhatIsGround = controller.whiteLayer;
+            }
         }
     }
 

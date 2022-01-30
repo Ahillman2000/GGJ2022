@@ -66,18 +66,9 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q) && !withinObject)
         {
             colourChange.ChangeColour();
-
-            if(controller.m_WhatIsGround == controller.whiteLayer)
-            {
-                controller.m_WhatIsGround = controller.blackLayer;
-            }
-            else
-            {
-                controller.m_WhatIsGround = controller.whiteLayer;
-            }
         }
 
-        if(horizontal_move != 0 && controller.IsGrounded())
+        if (horizontal_move != 0 && controller.IsGrounded())
         {
             player_sprites[0].SetBool("moving",true);
             player_sprites[1].SetBool("moving",true);
