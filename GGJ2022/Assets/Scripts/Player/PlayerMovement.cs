@@ -20,11 +20,11 @@ public class PlayerMovement : MonoBehaviour
 
         if(colourChange.colour == ColourChange.Colour.BLACK)
         {
-            controller.m_WhatIsGround = controller.whiteLayer;
+            controller.m_WhatIsGround[1] = controller.whiteLayer;
         }
         else
         {
-            controller.m_WhatIsGround = controller.blackLayer;
+            controller.m_WhatIsGround[1] = controller.blackLayer;
         }
     }
 
@@ -82,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        controller.Move(horizontal_move * Time.fixedDeltaTime, false, jump);
+        controller.Move(horizontal_move * Time.fixedDeltaTime, jump);
         jump = false;
     }
 }
