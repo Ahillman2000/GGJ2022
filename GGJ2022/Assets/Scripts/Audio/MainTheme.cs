@@ -5,7 +5,7 @@ public class MainTheme : MonoBehaviour
     private void Start()
     {
         EventParam audioParam = new EventParam(); 
-        audioParam.string_ = "MenuTheme";
+        audioParam.string_ = "GameTheme";
         
         AudioManager.Instance.Play(audioParam);
     }

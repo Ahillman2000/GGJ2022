@@ -24,9 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Level_5.unity
     guid: 8de3394b6e975364080b8f379a4034b7
   - enabled: 1
-    path: Assets/Scenes/Level_EasterEgg.unity
-    guid: 516bcf6becb139547bd659479dc4d758
-  - enabled: 1
     path: Assets/Scenes/End.unity
     guid: aa271b1b87c683541985ea0500ba7fad
+  - enabled: 1
+    path: Assets/Scenes/Level_EasterEgg.unity
+    guid: 516bcf6becb139547bd659479dc4d758
   m_configObjects: {}

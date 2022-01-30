@@ -10,7 +10,10 @@ public class Projectile : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D col)
     {
         GameObject surface = col.gameObject;
-        surface.GetComponent<ColourChange>().ChangeColour();
+        if(surface.GetComponent<ColourChange>() != null)
+        {
+            surface.GetComponent<ColourChange>().ChangeColour();
+        }
         Destroy(gameObject);
     }
 }
