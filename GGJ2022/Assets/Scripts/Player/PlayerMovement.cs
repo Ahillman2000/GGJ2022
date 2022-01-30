@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private CharacterController2D controller;
     ColourChange colourChange;
     [SerializeField] Animator[] player_sprites;
+    public bool withinObject = false;
 
     float horizontal_move = 0f;
 
@@ -25,12 +26,36 @@ public class PlayerMovement : MonoBehaviour
         {
             controller.m_WhatIsGround = controller.blackLayer;
         }
-
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("CollisionChecker"))
+        {
+            withinObject = true;
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("CollisionChecker"))
+        {
+            withinObject = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("CollisionChecker"))
+        {
+            withinObject = false;
+        }
+    }
 
     void Update()
     {
+        Debug.Log("within object: " + withinObject);
+
         horizontal_move = Input.GetAxisRaw("Horizontal") * run_speed;
 
         if(Input.GetButton("Jump"))
@@ -38,9 +63,10 @@ public class PlayerMovement : MonoBehaviour
             jump = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q) && !withinObject)
         {
             colourChange.ChangeColour();
+
             if(controller.m_WhatIsGround == controller.whiteLayer)
             {
                 controller.m_WhatIsGround = controller.blackLayer;
