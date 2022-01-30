@@ -554,7 +554,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &686578758
 Transform:
   m_ObjectHideFlags: 0
@@ -4190,6 +4190,24 @@ MonoBehaviour:
     pitch: 1
     pitchVariance: 0
     loop: 0
+    mixerGroup: {fileID: 24300002, guid: dcad3d8e133f9474690c2e494da84d50, type: 2}
+    source: {fileID: 0}
+  - name: Teleport
+    clip: {fileID: 8300000, guid: 3d5ed452647ec7f4395939d3e585907e, type: 3}
+    volume: 0.5
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: dcad3d8e133f9474690c2e494da84d50, type: 2}
+    source: {fileID: 0}
+  - name: GameTheme
+    clip: {fileID: 8300000, guid: ff1c871729e485e469f40337d1ccc258, type: 3}
+    volume: 0.1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
     mixerGroup: {fileID: 24300002, guid: dcad3d8e133f9474690c2e494da84d50, type: 2}
     source: {fileID: 0}
 --- !u!114 &1469213458

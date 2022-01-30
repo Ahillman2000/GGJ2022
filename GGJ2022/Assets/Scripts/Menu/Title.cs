@@ -29,6 +29,11 @@ public class Title : MonoBehaviour
 
     public void StartGame()
     {
+        EventParam clickAudio = new EventParam { string_ = "Click" };
+        AudioManager.Instance.Play(clickAudio);
+        EventParam themeAudio = new EventParam { string_ = "MenuTheme" };
+        AudioManager.Instance.Stop(themeAudio);
+        
         SceneManager.LoadScene("Level_1");
     }
 
