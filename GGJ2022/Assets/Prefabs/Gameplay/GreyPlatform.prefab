@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1544792032072496845}
   - component: {fileID: 1544792032072496847}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform_sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1544792032557241669}
   - component: {fileID: 2287103195923691848}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GreyPlatform
   m_TagString: Platform
   m_Icon: {fileID: 0}

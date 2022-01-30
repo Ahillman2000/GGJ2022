@@ -4067,8 +4067,8 @@ Transform:
   - {fileID: 165020709}
   - {fileID: 1767324364}
   - {fileID: 849706543}
-  - {fileID: 375740728}
   - {fileID: 1532110407}
+  - {fileID: 375740728}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4082,7 +4082,7 @@ PrefabInstance:
     - target: {fileID: 3960051668487350976, guid: 6bf16541494d7a9498ec938192a118c3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3960051668487350976, guid: 6bf16541494d7a9498ec938192a118c3,
         type: 3}
@@ -4252,7 +4252,7 @@ PrefabInstance:
     - target: {fileID: 1544792032557241669, guid: b788b80b4e4bd254baca942ab60350fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1544792032557241669, guid: b788b80b4e4bd254baca942ab60350fe,
         type: 3}
@@ -4831,6 +4831,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_WhatIsGround.m_Bits
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736909949846425033, guid: 70441a1ed1301b948b59bda867143d86,
+        type: 3}
+      propertyPath: m_WhatIsGround.Array.data[0].m_Bits
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 8736909949846425039, guid: 70441a1ed1301b948b59bda867143d86,
         type: 3}

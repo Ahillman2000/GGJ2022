@@ -54,7 +54,10 @@ public class CharacterController2D : MonoBehaviour
 				if (!wasGrounded)
 					OnLandEvent.Invoke();
 			}
+        }
 
+        for (int i = 0; i < collidersBW.Length; i++)
+        {
 			if (collidersBW[i].gameObject != gameObject)
 			{
 				Debug.Log(collidersBW[i].gameObject.name);
