@@ -132,8 +132,10 @@ MonoBehaviour:
   projectile: {fileID: 5962918309249157693, guid: 6b937a48252c97846ad0a41f7f420371,
     type: 3}
   firePoint: {fileID: 6175487503107984056}
-  fireRateInSecs: 2
+  fireDelay: 1
   bulletForce: 10
+  fireSequence: 0000000001000000
+  shouldRotate: 0
 --- !u!114 &7158680583459830388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,6 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 6175487503335349499}
+  controller: {fileID: 0}
   colour: 1
 --- !u!1 &6175487504058398748
 GameObject:
@@ -247,4 +250,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 6175487504058398722}
+  controller: {fileID: 0}
   colour: 1

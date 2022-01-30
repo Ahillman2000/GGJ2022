@@ -41,7 +41,7 @@ public class ColourChange : MonoBehaviour
             colour = Colour.BLACK;
         }
 
-        if(this.CompareTag("Player"))
+        if(this.CompareTag("Player") && controller != null)
         {
             if (controller.m_WhatIsGround == controller.whiteLayer)
             {
