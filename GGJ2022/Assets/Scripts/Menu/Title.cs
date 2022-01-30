@@ -36,7 +36,7 @@ public class Title : MonoBehaviour
         EventParam themeAudio = new EventParam { string_ = "MenuTheme" };
         AudioManager.Instance.Stop(themeAudio);
         
-        SceneManager.LoadScene("Level_1");
+        SceneManager.LoadScene("Tutorial");
     }
 
     public void QuitGame()
