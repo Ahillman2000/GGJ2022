@@ -66,6 +66,10 @@ public class ColourChange : MonoBehaviour
             spriteRenderer.color = Color.white;
             this.gameObject.layer = LayerMask.NameToLayer("White");
         }
+        if (this.transform.childCount > 0)
+        {
+            this.transform.GetChild(0).gameObject.layer = this.transform.gameObject.layer;
+        }
     }
 
     public Colour GetColour()
