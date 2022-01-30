@@ -188,12 +188,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_JumpForce: 150
-  m_CrouchSpeed: 0.36
   m_MovementSmoothing: 0.01
   m_AirControl: 1
   m_WhatIsGround:
-    serializedVersion: 2
-    m_Bits: 192
+  - serializedVersion: 2
+    m_Bits: 1
+  - serializedVersion: 2
+    m_Bits: 64
   blackLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -202,12 +203,8 @@ MonoBehaviour:
     m_Bits: 128
   m_GroundCheck: {fileID: 8736909950000049336}
   m_CeilingCheck: {fileID: 8736909949173427737}
-  m_CrouchDisableCollider: {fileID: 0}
   m_Grounded: 0
   OnLandEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  OnCrouchEvent:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &8736909949846425032
