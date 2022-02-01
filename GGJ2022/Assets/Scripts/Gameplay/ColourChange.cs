@@ -30,7 +30,7 @@ public class ColourChange : MonoBehaviour
 
     public void ChangeColour()
     {
-        Debug.Log("changing colour");
+        //Debug.Log("changing colour");
 
         if (colour == Colour.BLACK)
         {

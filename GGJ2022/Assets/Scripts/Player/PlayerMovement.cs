@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("within object: " + withinObject);
+        //Debug.Log("within object: " + withinObject);
 
         horizontal_move = Input.GetAxisRaw("Horizontal") * run_speed;
 
