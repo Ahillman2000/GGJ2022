@@ -17,7 +17,7 @@ public class Turret : MonoBehaviour
 
     private void Start()
     {
-        _timePassed = fireDelay;
+        _timePassed = fireDelay*1.25f;
         _targetRotation = transform.rotation.eulerAngles.z;
     }
 
